@@ -8,7 +8,6 @@
 
 
 return array(
-
     'Global' => array(
         array(
             'permission' => 'superuser',
@@ -17,6 +16,7 @@ return array(
             'display'    => true,
         ),
     ),
+
 
     'Admin' => array(
         array(
@@ -27,6 +27,7 @@ return array(
         )
     ),
 
+
     'CSV Import' => array(
         array(
             'permission' => 'import',
@@ -36,6 +37,7 @@ return array(
         )
     ),
 
+
     'Reports' => array(
         array(
             'permission' => 'reports.view',
@@ -44,6 +46,7 @@ return array(
             'display'    => true,
         ),
     ),
+
 
     'Assets' => array(
         array(
@@ -106,7 +109,15 @@ return array(
             'display'    => true,
         ),
 
+        array(
+            'permission' => 'assets.edit.requested',
+            'label'      => 'Manage Requested Assets',
+            'note'       => '',
+            'display'    => true,
+        ),
+
     ),
+
 
     'Accessories' => array(
         array(
@@ -145,6 +156,12 @@ return array(
             'note'       => '',
             'display'    => true,
         ),
+        array(
+            'permission' => 'accessories.edit.requested',
+            'label'      => 'Manage Requested Accessories',
+            'note'       => '',
+            'display'    => true,
+        ),
     ),
 
     'Consumables' => array(
@@ -175,6 +192,12 @@ return array(
         array(
             'permission' => 'consumables.checkout',
             'label'      => 'Checkout ',
+            'note'       => '',
+            'display'    => true,
+        ),
+        array(
+            'permission' => 'consumables.edit.requested',
+            'label'      => 'Manage Requested Consumables',
             'note'       => '',
             'display'    => true,
         ),
@@ -218,6 +241,12 @@ return array(
             'note'       => '',
             'display'    => true,
         ),
+        array(
+            'permission' => 'licenses.edit.requested',
+            'label'      => 'Manage Requested License Keys',
+            'note'       => '',
+            'display'    => true,
+        ),
     ),
 
 
@@ -258,8 +287,15 @@ return array(
             'note'       => '',
             'display'    => true,
         ),
+        array(
+            'permission' => 'components.edit.requested',
+            'label'      => 'Manage Requested Components',
+            'note'       => '',
+            'display'    => true,
+        ),
 
     ),
+
 
     'Kits' => array(
         array(
@@ -350,6 +386,18 @@ return array(
             'note'       => '',
             'display'    => true,
         ),
+        array(
+            'permission' => 'models.view.requestable',
+            'label'      => 'View Requestable Models',
+            'note'       => '',
+            'display'    => true,
+        ),
+        array(
+            'permission' => 'models.edit.requested',
+            'label'      => 'Manage Requested Models',
+            'note'       => '',
+            'display'    => true,
+        ),
 
     ),
 
@@ -380,6 +428,7 @@ return array(
         ),
     ),
 
+
     'Departments' => array(
         array(
             'permission' => 'departments.view',
@@ -406,6 +455,7 @@ return array(
             'display'    => true,
         ),
     ),
+
 
     'Status Labels' => array(
         array(
@@ -434,6 +484,7 @@ return array(
         ),
     ),
 
+
     'Custom Fields' => array(
         array(
             'permission' => 'customfields.view',
@@ -460,6 +511,7 @@ return array(
             'display'    => true,
         ),
     ), 
+
 
     'Suppliers' => array(
         array(
@@ -516,6 +568,7 @@ return array(
         ),
     ),
 
+
     'Depreciations' => array(
         array(
             'permission' => 'depreciations.view',
@@ -542,6 +595,7 @@ return array(
             'display'    => true,
         ),
     ),
+
 
     'Locations' => array(
         array(
@@ -570,6 +624,7 @@ return array(
         ),
     ),
 
+
     'Companies' => array(
         array(
             'permission' => 'companies.view',
@@ -596,8 +651,6 @@ return array(
             'display'    => true,
         ),
     ),
-
-
 
 
     'Self' => array(
@@ -628,11 +681,5 @@ return array(
             'note'       => 'This user may check out assets that are marked for self-checkout.',
             'display'    => true,
         ),
-
     ),
-
-
-
-
-
 );

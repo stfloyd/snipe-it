@@ -174,16 +174,20 @@ Route::group(
         );
 
         # Bulk checkout / checkin
-         Route::get( 'bulkcheckout',  [
-                 'as' => 'hardware/bulkcheckout',
-                 'uses' => 'Assets\BulkAssetsController@showCheckout'
-         ]);
-        Route::post( 'bulkcheckout',  [
+        Route::get('bulkcheckout',  [
+            'as' => 'hardware/bulkcheckout',
+            'uses' => 'Assets\BulkAssetsController@showCheckout'
+        ]);
+        Route::post('bulkcheckout',  [
             'as' => 'hardware/bulkcheckout',
             'uses' => 'Assets\BulkAssetsController@storeCheckout'
         ]);
 
-
+        # Cancel hardware request
+        Route::get('{id}/cancel', [
+            'as' => 'hardware/cancel',
+            'uses' => 'Assets\AssetsController@cancelRequested'
+        ]);
 
 
 });
